@@ -1,0 +1,725 @@
+@import url('https://fonts.cdnfonts.com/css/cinematografica');
+/* font-family: 'Cinematografica', sans-serif; */
+@import url('https://fonts.cdnfonts.com/css/renogare-soft');
+/* font-family: 'Renogare Soft', sans-serif; */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    text-decoration: none;
+    list-style: none;
+}
+
+/* NAV */
+.container_nav{
+    width: 100%;
+    background-image: linear-gradient(0deg, rgba(245, 245, 245, 0) 0%, rgba(0, 0, 0, 1) 100%);
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1vh 10%;
+    position: fixed;
+    z-index: 3;
+}
+.titulo_nav{
+    font-family: 'Cinematografica', sans-serif;
+    font-size: 3vh;
+    color: yellow;
+    transition: all 1.0s;
+}
+.titulo_nav a{
+    color: yellow;
+}
+.titulo_nav:hover{
+    transform: scale(1.2);
+}
+.nav_links{
+    font-family: 'Renogare Soft', sans-serif;
+    display: flex;
+    flex-wrap: wrap;
+}
+.nav_links li{
+    display: inline-block;
+    padding: 0 20px;
+}
+.nav_links li a{
+    text-decoration: none;
+    color: aliceblue;
+    font-size: 1.5vh;
+}
+.nav_links li a:hover{
+    color: yellow;
+}
+
+/* HERO */
+.hero{
+    height: 100vh;
+    padding: .1px;
+    background-image: url(./assets/img/cinema_camera.jpg);
+    filter: contrast(100%);
+    position: relative;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+/* HERO y titulo WES ANDERSON */
+.hero_wa{
+    background-image: url(./assets/img/wa_hero.jpg);
+}
+.hero_wa .titulo_principal h1{
+    color: fuchsia;
+}
+/* HERO y titulo CHRISTOPHER NOLAN */
+.hero_cn{
+    background-image: url(./assets/img/cn_hero2.jpg);
+}
+.hero_cn .titulo_principal h1{
+    color: royalblue;
+}
+/* HERO y titulo QUENTIN TARANTINO */
+.hero_qt{
+    background-image: url(./assets/img/qt_hero.jpeg);
+}
+.hero_qt .titulo_principal h1{
+    color: red;
+}
+.titulo_principal{
+    height: 20vh;
+    margin-top: 30vh;
+    display: flex;
+    flex-flow: column;
+    justify-content: space-around;
+    transition: all 1.0s;
+    font-family: 'Cinematografica', sans-serif;
+    text-shadow: 3px 3px 3px black;
+    text-align: center;
+}
+.titulo_principal:hover{
+    transform: scale(1.2);
+}
+.titulo_principal h1{
+    font-size: 17vh;
+    color: yellow;
+}
+.titulo_principal h2{
+    font-size: 4vh;
+    color: aliceblue;
+}
+.director_hero{
+    width: 100%;
+    height: 7vh;
+    margin-top: 20vh;
+    list-style: none;
+    font-family: 'Renogare Soft', sans-serif;
+}
+.director_hero ul{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.director_hero li{
+    display: inline-block;
+    padding: 0 20px;
+}
+.director_hero li a{
+    text-decoration: none;
+    font-family: 'Cinematografica', sans-serif;
+    text-shadow: 2px 2px 2px black;
+    color: aliceblue;
+    font-size: 3.5vh;
+    transition: all 1s;
+}
+.director_hero li a:hover{
+    font-size: 4vh;
+    color: yellow;
+}
+
+/* MAIN */
+/* que es el cine? */
+.container_cine{
+    padding: 30px;
+    background-image: radial-gradient(circle, rgba(255, 255, 255, 0) 0%, rgb(0, 0, 0) 74%),url(./assets/img/cine_background.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    position: relative;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+.titulo_cine{
+    width: 100%;
+    margin-top: -30px;
+    padding: 15px;
+    font-family: 'Cinematografica', sans-serif;
+    font-size: 3vh;
+    color: yellow;
+    text-shadow: 2px 2px 2px black;
+    text-align: center;
+    background-image: linear-gradient(360deg, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 1) 100%);
+}
+.videos_cine{
+    max-width: 600px;
+    min-width: 400px;
+}
+.videos_cine iframe{
+    border-radius: 40px;
+}
+.parr_cine{
+    max-width: 850px;
+    min-width: 400px;
+    padding: 20px;
+    height: 25vh;
+    display: flex;
+    align-items: center;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    padding: 25px;
+    font-family: 'Renogare Soft', sans-serif;
+    color: aliceblue;
+    text-shadow: 2px 2px 2px black;
+    font-size: 2vh;
+    text-align: justify;
+    border: solid 2px black;
+    border-radius: 20px;
+}
+.parrafo_1{
+    background-image: linear-gradient(360deg, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0.856) 100%),url(./assets/img/cine_pink.jpg);
+}
+.parrafo_2{
+    background-image: linear-gradient(360deg, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 1) 100%),url(./assets/img/cine_blue.jpg);
+}
+.parrafo_3{
+    background-image: linear-gradient(360deg, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 1) 100%),url(./assets/img/cine_red.jpg);
+}
+/* DIRECTORES */
+.container_directores{
+    background-image: radial-gradient(circle, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0.87) 74%), url(./assets/img/background_directores.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+.titulo_directores{
+    width: 100%;
+    padding: 15px;
+    font-family: 'Cinematografica', sans-serif;
+    font-size: 3vh;
+    color: yellow;
+    text-shadow: 2px 2px 2px black;
+    text-align: center;
+    background-image: linear-gradient(360deg, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 1) 100%);
+}
+.directores_parrafo{
+    width: 60%;
+    margin: 30px;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0);
+    border-radius: 15px;
+    box-shadow: 0 5px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    filter: contrast(120%);
+    border: 1px solid rgba(0, 0, 0, 0.6);
+    font-family: 'Renogare Soft', sans-serif;
+    color: aliceblue;
+    text-shadow: 2px 2px 2px black;
+    font-size: 2vh;
+    text-align: justify;
+}
+.directores_links{
+    display: flex;
+    justify-content: space-around;
+    height: 90vh;
+    margin: 30px;
+    width: 80%;
+}
+.director{
+    width: 0%;
+    margin: 3vh;
+    padding: 20px;
+    flex-grow: 1;
+    background: rgba(0, 0, 0, 0);
+    border-radius: 15px;
+    box-shadow: 0 5px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 0.2rem solid rgba(0, 0, 0, 0.6);
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-between;
+    align-items: center;
+    opacity: .8;
+    transition: .5s ease;
+}
+.director:hover{
+    width: 20%;
+    opacity: 1;
+    filter: contrast(120%);
+}
+.titulo_director_h3{
+    font-family: 'Cinematografica', sans-serif;
+    font-size: 3vh;
+    color: yellow;
+    text-shadow: 2px 2px 2px black;
+}
+.director_img{  
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.director_img img{
+    width: 70%;
+    filter: drop-shadow(2px 2px 2px black);
+}
+.director_p{
+    width: 70%;
+    margin: 40px;
+    font-family: 'Renogare Soft', sans-serif;
+    color: aliceblue;
+    text-shadow: 2px 2px 2px black;
+    font-size: 1.5vh;
+    text-align: center;
+    text-shadow: 2px 2px 2px black
+}
+.director a{
+    display: flex;
+    justify-content: center;
+}
+.director a img{
+    height: 4vh;
+    margin: 0 auto;
+    border-radius: 1rem;
+    transition: all .5s;
+    opacity: .7;
+}
+.director a img:hover{
+    height: 4.5vh;
+    opacity: 1;
+}
+/* ACA SE EMPIEZA A CONFIGURAR EL MAIN DE LOS OTROS HTML */
+.presentacion{
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    display: flex;
+    flex-flow: column wrap;
+    gap: 30px;
+}
+.div_padding{
+    padding: 3vh;
+}
+.titulos_section_directores{
+    width: 100%;
+    padding: 15px;
+    font-family: 'Cinematografica', sans-serif;
+    font-size: 3vh;
+    text-shadow: 2px 2px 2px black;
+    text-align: center;
+    background-image: linear-gradient(360deg, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 1) 100%);
+}
+.movie_top5{
+    width: 70%;
+    align-self: center;
+    margin-bottom: 3vh;
+    height: 25vh;
+    padding: 1.8vh;
+    background: rgba(0, 0, 0, 0.4);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5.8px);
+    -webkit-backdrop-filter: blur(5.8px);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-flow: row wrap;
+    opacity: .9;
+    transition: all .5s;
+}
+.movie_top5:hover{
+    height: 30vh;
+    filter: contrast(130%);
+    opacity: 1;
+}
+.movie_top5 img{
+    height: 115%;
+}
+.movie_top5 h3{
+    text-transform: uppercase;
+    margin: 0 auto;
+    font-size: 4vh;
+    font-family: 'Cinematografica', sans-serif;
+    text-shadow: 2px 2px 2px black;
+    color: aliceblue;
+}
+.movie_links{
+    width: 25%;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.movie_links ul li{
+    display: inline-block;
+    padding: 0 20px;
+    text-align: center;
+}
+.movie_links ul li h4{
+    font-size: 2vh;
+    font-family: 'Renogare Soft', sans-serif;
+    color: aliceblue;
+    text-shadow: 2px 2px 2px black;
+}
+.movie_links ul li a i{
+    font-size: 4.8vh;
+    color: aliceblue;
+    text-shadow: 2px 2px 2px black;
+}
+.movie_links ul li a i:hover{
+    color: yellow;
+}
+.movie_links ul li a img{
+    height: 4vh;
+    border-radius: 1.5vh;
+}
+/* WES ANDERSON */
+.wa_presentacion{
+    background-image: url(./assets/img/wes_anderson_section1.jpg);
+    display: flex;
+    align-items: flex-end;
+    flex-flow: column;
+}
+.titulo_wa{
+    color: fuchsia;
+}
+.div_padding_wa{
+    width: 60%;
+    align-self: flex-end;
+}
+.wa_box_parr_s1{
+    padding: 30px;
+    background: rgba(255, 255, 255, 0.11);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5.8px);
+    -webkit-backdrop-filter: blur(5.8px);
+    border: 1px solid pink;
+    font-family: 'Renogare Soft', sans-serif;
+    font-size: 1.5vh;
+    color: aliceblue;
+    text-shadow: 2px 2px 2px black;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.wa_box_parr_s1 h3{
+    color: rgb(198, 83, 243);
+    font-size: 1.8vh;
+}
+.wa_bp{
+    width: 95%;
+    margin: 0 auto;
+}
+.wa_caracteristicas{
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 2vh;
+    gap: 3vh;
+}
+.wa_box_iframe{
+    width: 60%;
+}
+.wa_box_iframe iframe{
+    width: 100%;
+    height: 32vh;
+    border-radius: 30px;
+}
+.wa_c1{
+    width: 35%;
+}
+.wa_c3{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+}
+.wa_box_img{
+    width: 45%;
+}
+.wa_box_img img{
+    width: 100%;
+    border-radius: 30px;
+    filter: drop-shadow(3px 3px 3px black);
+}
+.wa_top5{
+    background-image: url(./assets/img/wes_anderson_section4.jpg);
+}
+.wa_top{
+    border: 1px solid pink;
+}
+/* CHRISTOPHER NOLAN */
+.cn_presentacion{
+    background-image: url(./assets/img/nolan_section1.jpg);
+    align-items: flex-start;
+}
+.titulo_cn{
+    color: royalblue;
+}
+.div_padding_cn{
+    width: 66%;
+    display: flex;
+    flex-flow: column;
+    gap: 3vh;
+}
+.cn_c{
+    padding: 30px;
+    background: rgba(255, 255, 255, 0.11);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5.8px);
+    -webkit-backdrop-filter: blur(5.8px);
+    border: 1px solid blue;
+    font-family: 'Renogare Soft', sans-serif;
+    font-size: 1.5vh;
+    color: aliceblue;
+    text-shadow: 2px 2px 2px black;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.cn_caracteristicas{
+    width: 90%;
+    padding: 2vh;
+    margin: 0 auto;
+    display: flex;
+    flex-flow: wrap;
+    justify-content: space-between;
+    gap: 3vh;
+}
+.cn_cp{
+    width: 95%;
+    margin: 0 auto;
+}
+.cn_c h3{
+    color: royalblue;
+    font-size: 1.8vh;
+}
+.cn_iframe{
+    width: 55%;
+}
+.cn_iframe iframe{
+    width: 100%;
+    height: 32vh;
+    border-radius: 30px;
+}
+.cn_c1{
+    width: 40%;
+}
+.cn_c3{
+    display: flex;
+    flex-direction: column;
+    width: 65%;
+}
+.cn_img{
+    width: 30%;
+}
+.cn_img img{
+    width: 100%;
+    filter: drop-shadow(3px 3px 3px black);
+}
+.cn_top5{
+    background-image: url(./assets/img/nolan_section3.jpg);
+}
+.cn_top{
+    border: 1px solid blue;
+}
+/* QUENTIN TARANTINO */
+.qt_presentacion{
+    background-image: url(./assets/img/tarantino_section1.jpg);
+}
+.titulo_qt{
+    color: red;
+}
+.div_padding_qt{
+    width: 72%;
+    display: flex;
+    flex-flow: column;
+    gap: 3vh;
+}
+.qt_c{
+    padding: 30px;
+    background: rgba(0, 0, 0, 0.4);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5.8px);
+    -webkit-backdrop-filter: blur(5.8px);
+    border: 1px solid red;
+    font-family: 'Renogare Soft', sans-serif;
+    font-size: 1.5vh;
+    color: aliceblue;
+    text-shadow: 2px 2px 2px black;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.qt_caracteristicas{
+    width: 90%;
+    padding: 2vh;
+    margin: 0 auto;
+    display: flex;
+    flex-flow: wrap;
+    justify-content: space-between;
+    gap: 3vh;
+}
+.qt_cp{
+    width: 95%;
+    margin: 0 auto;
+}
+.qt_c h3{
+    color: red;
+    font-size: 1.8vh;
+}
+.qt_iframe{
+    width: 50%;
+}
+.qt_iframe iframe{
+    width: 100%;
+    height: 32vh;
+    border-radius: 30px;
+}
+.qt_c1{
+    width: 45%;
+}
+.qt_img{
+    width: 25%;
+}
+.qt_img img{
+    width: 100%;
+    filter: drop-shadow(3px 3px 3px black);
+}
+.qt_c2{
+    width: 40%;
+}
+.qt_c3{
+    width: 55%;
+}
+.qt_img2{
+    width: 40%;
+}
+.qt_img2 img{
+    width: 100%;
+    filter: drop-shadow(3px 3px 3px black);
+    filter: contrast(130%);
+}
+.qt_top5{
+    background-image: url(./assets/img/tarantino_section3.png);
+}
+.qt_top{
+    border: 1px solid red;
+}
+
+/* FOOTER */
+.pie{
+    width: 100%;
+    height: auto;
+    padding: 30px 30px;
+    background-image: linear-gradient(0deg, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 1) 90%),url(./assets/img/cinema_eyes.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+.contacto_pie{
+    width: 60%;
+    text-shadow: 2px 2px 2px black;
+    text-align: center;
+}
+.contacto_pie div h4{
+    width: 100%;
+    padding: 2vh;
+    font-family: 'Cinematografica', sans-serif;
+    font-size: 3vh;
+    color: yellow;
+}
+.parrafo_pie p{
+    padding: 30px;
+    font-family: 'Renogare Soft', sans-serif;
+    color: aliceblue;
+    font-size: 1.5vh;
+}
+.parrafo_pie p a{
+    color: aliceblue;
+}
+.parrafo_pie p a:hover{
+    color: yellow;
+}
+.contacto_pie div ul li{
+    display: inline-block;
+    padding: 0 20px;
+    font-size: 3vh;
+}
+.contacto_pie div ul li a i{
+    color: aliceblue;
+}
+.contacto_pie div ul li a i:hover{
+    color: yellow;
+}
+.logo_autor{
+    width: 30%;
+    padding: .1px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column;
+    position: relative;
+}
+.logo_autor i{
+    position: absolute;
+    z-index: 0;
+    color: yellow;
+    text-shadow: 2px 2px 2px black;
+    text-align: center;
+    font-size: 26vh;
+}
+.logo_autor h3{
+    z-index: 1;
+    font-family: 'Cinematografica', sans-serif;
+    text-transform: uppercase;
+    font-size: 5vh;
+}
+.logo_autor p{
+    z-index: 1;
+    font-size: 1.5vh;
+    margin-bottom: -3vh;
+}
